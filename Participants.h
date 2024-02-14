@@ -30,9 +30,6 @@ public:
 	// Чтение присланных сообщений
 	void showMessages();
 
-	// Увеличение размера массива _messages
-	void resize();
-
 	// Сеттеры
 	void setLogin(string login);
 

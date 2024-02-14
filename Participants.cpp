@@ -15,9 +15,6 @@ Participants::~Participants()
 
 void Participants::recordMessage(string name, string text)
 {
-    if (_size == _count)
-        resize();
-
     _messages[_count].setSender(name);
 	_messages[_count].setText(text);
 	_count++;
@@ -45,11 +42,6 @@ void Participants::showMessages()
     }
 
     _count = 0;
-}
-
-void Participants::resize()
-{
-
 }
 
 void Participants::setLogin(string login)
